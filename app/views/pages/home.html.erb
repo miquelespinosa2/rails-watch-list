@@ -1,13 +1,89 @@
 <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://media.istockphoto.com/photos/theater-seats-picture-id493241704?k=20&m=493241704&s=612x612&w=0&h=1qTIPfIYsOQiOnqmTJp5g2Ui94ZDLnOSHmrnYdlDp9w=)">
-  Your favourite movies, anywhere
+  <h1 class="h1-sizing">Your favourite movies, anywhere</h1>
+  <br>
+  <div class="home-list-button">
+    <%= link_to "My Playlists", lists_path, class: "btn btn-primary" %>
+  </div>
 </div>
+<section class="dark">
+	<div class="container py-4">
+  <h1 class="text-center">Movies of the week</h1>
+		<article class="postcard dark red">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="https://images.fandango.com/ImageRenderer/820/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/223002/THBTMN_VERT_DUO_MAIN_2764x4096_DOM.jpg" alt="Image Title" />
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title red"><a href="#">The Batman</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2022--25 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i>Fri, Mar 18th 2022
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Batman ventures into Gotham City's underworld when a sadistic killer leaves behind a trail of cryptic clues. As the evidence begins to lead closer to home and the scale of the perpetrator's plans become clear, he must forge new relationships, unmask the culprit and bring justice to the abuse of power and corruption that has long plagued the metropolis.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i>Action</li>
+					<li class="tag__item"><i class="fas fa-clock mr-2"></i>2 hours</li>
+					<li class="tag__item play red">
+						<a href="https://www.amctheatres.com/movies/the-batman-59481" target="_blank"><i class="fas fa-play mr-2"></i>Watch it online</a>
+					</li>
+				</ul>
+			</div>
+		</article>
+	</div>
+</section>
 
-<div>
-  <ul>
-    <% @lists.each do |list|%>
-      <li>
-        <%= link_to list.name, list_path(list) %>
-      </li>
-    <% end %>
-  </ul>
-</div>
+<section class="dark">
+	<div class="container py-4">
+		<article class="postcard dark red">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="https://images.fandango.com/ImageRenderer/820/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/227173/Umma2022.jpg" alt="Image Title" />
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title red"><a href="#">Umma</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2022--25 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i> Fri, Mar 18th 2022
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Amanda and her daughter live a quiet life on an American farm, but when the remains of her estranged mother arrive from Korea, Amanda becomes haunted by the fear of turning into her own mother.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i>Horror</li>
+					<li class="tag__item"><i class="fas fa-clock mr-2"></i>1h 23 min</li>
+					<li class="tag__item play red">
+						<a href="https://www.fandango.com/umma-2022-227173/movie-overview?cid=fandango_web_home_carousel"><i class="fas fa-play mr-2"></i>Watch it online</a>
+					</li>
+				</ul>
+			</div>
+		</article>
+	</div>
+</section>
+
+<section class="dark">
+	<div class="container py-4">
+   <h1 class="d-none"></h1>
+		<article class="postcard dark red">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="https://images.fandango.com/ImageRenderer/820/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/226390/THE_OUTFIT_27x40_180_DIGI_FIN04.jpg" alt="Image Title" />
+			</a>
+			<div class="postcard__text">
+				<h1 class="postcard__title red"><a href="#">The Outfit</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2022--25 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i>Fri, Mar 18th 2022
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">From the Academy Award-winning writer of The Imitation Game (Graham Moore) comes The Outfit, a gripping and masterful thriller in which an expert tailor (Academy Award winner Mark Rylance) must outwit a dangerous group of mobsters in order to survive a fateful night.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i>Drama</li>
+					<li class="tag__item"><i class="fas fa-clock mr-2"></i>2 hours</li>
+					<li class="tag__item play red">
+						<a href="https://www.fandango.com/the-outfit-2022-226390/movie-overview?cid=fandango_web_home_carousel"><i class="fas fa-play mr-2"></i>Play Episode</a>
+					</li>
+				</ul>
+			</div>
+		</article>
+	</div>
+</section>
