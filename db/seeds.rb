@@ -6,6 +6,22 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+require 'open-uri'
+require 'json'
+
+i = 1
+while i < 164
+  url = "https://api.themoviedb.org/3/movie/top_rated?api_key=85a82b2fa01bce0b77d430c48db47f86&language=en-US&page=#{i}"
+  json = URI.open("#{url}").read
+  data = JSON.parse(json)
+  movies = data['results']
+  movies.each do |movie|
+    Movie.create(title: movie['original_title'], overview: movie['overview'], rating: movie['vote_average'], poster_url: "https://image.tmdb.org/t/p/w500#{movie['poster_path']}")
+  end
+  i += 1
+  puts "#{i} pages of movies created"
+end
+
 
 Movie.create(title: "Wonder Woman 1984", overview: "Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s", poster_url: "https://image.tmdb.org/t/p/original/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg", rating: 6.9)
 Movie.create(title: "The Shawshank Redemption", overview: "Framed in the 1940s for double murder, upstanding banker Andy Dufresne begins a new life at the Shawshank prison", poster_url: "https://image.tmdb.org/t/p/original/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg", rating: 8.7)
