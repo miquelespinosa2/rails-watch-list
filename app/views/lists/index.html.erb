@@ -1,10 +1,16 @@
-
-<div>
-  <ul>
+<div class="container">
+  <div class="row mt-4">
     <% @lists.each do |list|%>
-      <li>
-        <%= link_to list.name, list_path(list) %>
-      </li>
-    <% end %>
-  </ul>
+    <div class="col-sm-12 col-md-4 col-lg-4 py-3">
+      <div class="card" style="width:500px">
+        <div class="card-img-overlay">
+          <h4 class="card-title"><%= list.name %>
+            <%= link_to list_path(list) do %>
+              <%= image_tag "https://cdn.pixabay.com/photo/2019/11/07/20/48/cinema-4609877_1280.jpg", class: "card-img-top" %>
+            <% end %>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
 </div>
