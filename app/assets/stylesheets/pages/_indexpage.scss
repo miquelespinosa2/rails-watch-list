@@ -1,0 +1,15 @@
+.card {
+  background-image: url("https://cdn.pixabay.com/photo/2019/11/07/20/48/cinema-4609877_1280.jpg");
+  width: 400px;
+  background-size: cover;
+  height: 400px;
+  text-align: center;
+  margin: auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-title {
+  color: white;
+}
