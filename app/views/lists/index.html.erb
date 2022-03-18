@@ -1,12 +1,16 @@
 <div class="container">
 <h1 class="text-center mt-4">Your playlists</h1>
   <div class="row mt-4">
-    <% @lists.each do |list|%>
-     <div class="col-3 card-index">
-      <%= link_to list_path(list) do %>
-              <h4 class="card-title"><%= list.name %></h4>
+    <% if @lists.count == 0 %>
+      <%= link_to "Create a new list", new_list_path, class: "center-link" %>
+    <% else %>
+      <% @lists.each do |list|%>
+        <div class="col-3 card-index">
+          <%= link_to list_path(list) do %>
+                  <h4 class="card-title"><%= list.name %></h4>
+          <% end %>
+        </div>
       <% end %>
-      </div>
     <% end %>
   </div>
 </div>
