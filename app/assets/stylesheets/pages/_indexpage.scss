@@ -1,4 +1,4 @@
-.card {
+.card-index {
   background-image: url("https://cdn.pixabay.com/photo/2019/11/07/20/48/cinema-4609877_1280.jpg");
   width: 400px;
   background-size: cover;
@@ -12,4 +12,8 @@
 
 .card-title {
   color: white;
+}
+
+.card-body {
+  color: black;
 }
