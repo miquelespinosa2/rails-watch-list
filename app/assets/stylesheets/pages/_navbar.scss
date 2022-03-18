@@ -4,13 +4,16 @@
 }
 
 .nav-link:hover {
-  color: white;
+  color: rgb(230, 224, 224) !important;
+  a:hover {
+    color: white;
+  }
 }
 
 .navbar-nav:hover {
-  color: white;
+  color: rgb(230, 224, 224) !important;
 }
 
 .navbar-light:hover {
-  color: white;
+  color: rgb(230, 224, 224) !important;
 }
