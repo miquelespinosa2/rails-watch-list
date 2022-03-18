@@ -10,7 +10,7 @@ border-color: black !important;
 }
 
 .card-show-body {
-  background-color: rgb(255, 255, 255);
+  background-color: #2e15286b;
   margin-bottom: 20px;
   padding-inline: 0;
 }
@@ -21,4 +21,13 @@ border-color: black !important;
 
 body {
   background-color: #120F16 !important;
+}
+
+.info-top {
+  text-align: center;
+}
+
+.card-body-show {
+  color: white !important;
+  padding-left: 10px;
 }

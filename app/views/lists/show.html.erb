@@ -1,7 +1,7 @@
 <div class="container">
-  <div class="info-top d-flex justify-content-center m-5">
+  <div class="info-top m-5">
     <h1><%= @list.name %></h1>
-      <%= link_to 'add a movie', new_list_bookmark_path(@list), class: 'btn btn-primary' %>
+      <%= link_to 'Add a bookmark', new_list_bookmark_path(@list), class: 'btn btn-dark' %>
   </div>
 
   <div class="row">
@@ -10,7 +10,7 @@
     <div class="card-show-body d-flex">
       <%= image_tag movie.poster_url, class: "card-img-top-show" %>
       <div class="info-film">
-        <div class="card-body">
+        <div class="card-body-show">
           <%= movie.title %>
           <hr />
           <%= movie.overview %>
