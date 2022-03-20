@@ -2,6 +2,7 @@
 background-color: #120F16 !important;
 border-radius: none !important;
 border-color: black !important;
+display: flex;
 }
 
 .card-img-top-show {
@@ -44,6 +45,10 @@ body {
 
   h1.h1-sizing {
     text-align: center;
+  }
+
+  .card-show-body {
+    display: inline;
   }
 }
 

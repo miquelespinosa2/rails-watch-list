@@ -7,8 +7,8 @@
   <div class="row" id="fe-responsive">
     <% @list.movies.each do |movie| %>
     <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
-    <div class="card-show-body d-flex">
-      <%= image_tag movie.poster_url, class: "card-img-top-show" %>
+    <div class="card-show-body">
+        <%= image_tag movie.poster_url, class: "card-img-top-show" %>
       <div class="info-film">
         <div class="card-body-show">
           <%= movie.title %>
