@@ -4,7 +4,7 @@
       <%= link_to 'Add a bookmark', new_list_bookmark_path(@list), class: 'btn btn-dark' %>
   </div>
 
-  <div class="row">
+  <div class="row" id="fe-responsive">
     <% @list.movies.each do |movie| %>
     <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
     <div class="card-show-body d-flex">
