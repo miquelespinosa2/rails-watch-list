@@ -8,7 +8,9 @@
     <% @list.movies.each do |movie| %>
     <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
     <div class="card-show-body">
+      <div class="img-center">
         <%= image_tag movie.poster_url, class: "card-img-top-show" %>
+      </div>
       <div class="info-film">
         <div class="card-body-show">
           <%= movie.title %>

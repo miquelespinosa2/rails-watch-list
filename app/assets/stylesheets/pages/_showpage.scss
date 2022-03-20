@@ -14,6 +14,7 @@ display: flex;
   background-color: #2e15286b;
   margin-bottom: 20px;
   padding-inline: 0;
+  display: flex;
 }
 
 .info-film {
@@ -39,16 +40,31 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .card-img-top-show {
-    margin-top: 75px;
-  }
-
   h1.h1-sizing {
     text-align: center;
   }
 
   .card-show-body {
     display: inline;
+  }
+
+  .img-center {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+
+    img {
+    width: 120%;
+    object-fit: cover;
+    padding-top: 35px;
+  }
+  }
+
+  .card-body-show {
+    text-align: justify;
+    text-justify: auto;
+    padding-right: 10px !important;
   }
 }
 
