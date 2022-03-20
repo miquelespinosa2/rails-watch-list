@@ -5,7 +5,7 @@
       <%= link_to "Create a new list", new_list_path, class: "center-link" %>
     <% else %>
       <% @lists.each do |list|%>
-        <div class="col-3 card-index">
+        <div class="col-3 card-index d-flex">
           <%= link_to list_path(list) do %>
                   <h4 class="card-title"><%= list.name %></h4>
           <% end %>
